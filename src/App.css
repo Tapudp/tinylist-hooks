@@ -81,6 +81,16 @@
   cursor: pointer;
 }
 
+.input-with-add {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input-with-add img {
+  margin: -5px 0 0 0;
+}
+
 @media screen and (max-width: 768px) {
   .App-header {
     padding: 0 1rem;

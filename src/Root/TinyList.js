@@ -69,19 +69,22 @@ const TinyList = ({}) => {
 
   return (
     <div className='tiny-list'>
-      <div class='md-form form-sm'>
-        <input
-          id='form8'
-          className='form-control input-label'
-          type='text'
-          placeholder='+ Add to list...'
-          ref={todoRef}
-          onChange={handleChange}
-          onKeyDown={(e) =>
-            e.key === 'Enter' && curr.length > 0 && submitTodo()
-          }
-        />
-        {/* <button onClick={(e) => submitTodo(e.key)}>Submit</button> */}
+      <div className='input-with-add'>
+        <img src='/images/add.png' alt='add-item' />
+        <div class='md-form form-sm'>
+          <input
+            id='form8'
+            className='form-control input-label'
+            type='text'
+            placeholder='Add to list...'
+            ref={todoRef}
+            onChange={handleChange}
+            onKeyDown={(e) =>
+              e.key === 'Enter' && curr.length > 0 && submitTodo()
+            }
+          />
+          {/* <button onClick={(e) => submitTodo(e.key)}>Submit</button> */}
+        </div>
       </div>
       <List
         listType='upcoming'
