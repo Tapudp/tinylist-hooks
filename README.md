@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Tiny List! 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -32,3 +32,11 @@ This project has followed the following requirements:
 #### The design links of the same :
 
 - https://www.figma.com/file/2NcmTnLbI2tkXKZNA3PWHE/TinyList-test?node-id=0%3A1
+
+
+### Screenshots
+- Add a new item - https://github.com/dchia/tinylisttest-divyesh/blob/main/public/images/Adding%20item.png
+- Finished Items:   https://github.com/dchia/tinylisttest-divyesh/blob/main/public/images/Finished%20Items.png
+- Showing delete option on hover on desktop screens : https://github.com/dchia/tinylisttest-divyesh/blob/main/public/images/onHover%20delete.png
+- Mobile Screen layouts : https://github.com/dchia/tinylisttest-divyesh/blob/main/public/images/on%20a%20pixel%20mobile%20device.png
+
