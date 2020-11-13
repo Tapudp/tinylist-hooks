@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
+import TinyList from './Root/TinyList';
+import { postAPI } from './utils/api';
 
 function App() {
+  useEffect(() => {
+    postAPI(`/users`, {
+      body: {
+        user: {
+          first_name: 'Alfred',
+          last_name: 'Dominic',
+          email: 'mailme@alfiemax.com',
+          phone: '9999999999',
+        },
+      },
+    });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <header className='App-header'>TinyList</header>
+      <TinyList />
     </div>
   );
 }

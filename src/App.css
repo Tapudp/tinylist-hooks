@@ -1,5 +1,4 @@
 .App {
-  text-align: center;
 }
 
 .App-logo {
@@ -14,14 +13,112 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  padding: 0 1rem;
+  background-color: #eb5757;
+  min-height: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.tiny-list {
+  margin: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+
+.tiny-list .input-label {
+  padding: 1rem 0.5rem;
+  width: 34.21875rem;
+}
+
+.tiny-list ::placeholder {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #eb5757;
+}
+
+.actual-list {
+  width: 32rem;
+}
+
+.list-item {
+  display: grid;
+  grid-template-columns: 2rem 2fr 1fr;
+  align-items: baseline;
+}
+
+.list-item p {
+  justify-self: self-start;
+  word-break: break-word;
+}
+
+.list-item b {
+  justify-self: self-end;
+}
+
+.input-checkbox {
+  background: #dadada;
+}
+
+.finished-task {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #828282;
+  text-decoration: line-through;
+}
+
+.not-finished {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333333;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .App-header {
+    padding: 0 1rem;
+    background-color: #eb5757;
+    min-height: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .tiny-list .input-label {
+    padding: 1rem 0.5rem;
+    width: 20rem;
+  }
+
+  .actual-list {
+    width: 22rem;
+    padding: 0 1rem;
+  }
+
+  .list-item {
+    display: grid;
+    grid-template-columns: 20px 1fr 1fr;
+    align-items: baseline;
+  }
+
+  .list-item p {
+    justify-self: self-start;
+    word-break: break-word;
+  }
+
+  .list-item b {
+    justify-self: right;
+  }
 }
 
 .App-link {
